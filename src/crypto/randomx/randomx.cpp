@@ -107,6 +107,13 @@ RandomX_ConfigurationKeva::RandomX_ConfigurationKeva()
 	ScratchpadL3_Size = 1048576;
 }
 
+RandomX_ConfigurationWiii::RandomX_ConfigurationWiii()
+{
+	ArgonSalt = "RandomWIII\x03";
+	ScratchpadL2_Size = 131072;
+	ScratchpadL3_Size = 1048576;
+}
+
 RandomX_ConfigurationBase::RandomX_ConfigurationBase()
 	: ArgonIterations(3)
 	, ArgonLanes(1)
@@ -358,6 +365,7 @@ RandomX_ConfigurationArqma RandomX_ArqmaConfig;
 RandomX_ConfigurationGraft RandomX_GraftConfig;
 RandomX_ConfigurationSafex RandomX_SafexConfig;
 RandomX_ConfigurationKeva RandomX_KevaConfig;
+RandomX_ConfigurationWiii RandomX_WiiiConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 

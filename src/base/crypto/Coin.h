@@ -37,6 +37,7 @@ public:
         ARQMA,
         GRAFT,
         KEVA,
+        WIII,
         RAVEN,
         WOWNERO,
         ZEPHYR,
